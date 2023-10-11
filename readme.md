@@ -1,12 +1,14 @@
 <h1>MEJA & TV 303</h1>
 
 <h2>AUTHOR</h2>
-Alfian Aditya Kurniawan(Author)
-5222600037
-Rifqi Evan Febriansyah
-5222600054
-Michell Ernest Chrisnawan
-5222600056
+<p>Alfian Aditya Kurniawan(Author)</p>
+<p>5222600037</p>
 
-Gambar
+<p>Rifqi Evan Febriansyah</p>
+<p>5222600054</p>
+<p>Michell Ernest Chrisnawan</p>
+<p>5222600056</p>
+
+
+<h2>Gambar</h2>
 ![Meja TV](gt302.png)
