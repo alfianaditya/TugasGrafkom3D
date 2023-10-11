@@ -147,8 +147,11 @@ void display() {
         drawCustomCube(1.0, 0.75, -0.6, 1.9, 0.03, 0.05);
         drawCustomCube(-1.0, 0.75, -0.6, 1.9, 0.03, 0.05);
 
-        drawCustomCube(1.0, 1.19, -0.6, 1.9, 0.03, 0.05);
-        drawCustomCube(-1.0, 1.19, -0.6, 1.9, 0.03, 0.05);
+        drawCustomCube(1.0, 1.185, -0.6, 1.9, 0.03, 0.05);
+        drawCustomCube(-1.0, 1.185, -0.6, 1.9, 0.03, 0.05);
+
+    //papan belakang bawah
+        glColor3f(0.8, 0.84, 0.85);
 
     //papan sekat
         glColor3f(0.52, 0.52, 0.38);
@@ -159,7 +162,8 @@ void display() {
         drawCustomCube(0.0, 0.2, 0.755, 0.05, 2.0, 0.05);
         drawCustomCube(0.0, 0.2, -0.6, 0.1, 2.0, 0.06);
 
-
+        drawCustomCube(-1.95, 0.2, -0.6, 0.05, 2.0, 0.05);
+        drawCustomCube(1.95, 0.2, -0.6, 0.05, 2.0, 0.05);
     glPopMatrix();
 
 
