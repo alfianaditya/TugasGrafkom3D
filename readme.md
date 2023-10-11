@@ -1,4 +1,4 @@
-<h1>MEJA & TV 303</h1>
+<h1>Work Station GT302</h1>
 
 <h2>AUTHOR</h2>
 <p>Alfian Aditya Kurniawan(Author)</p>
@@ -11,4 +11,4 @@
 
 
 <h2>Gambar</h2>
-![Meja TV](gt302.png)
+![Work Station GT302](gt302.png)
