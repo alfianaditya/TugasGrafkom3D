@@ -1,6 +1,7 @@
 #include <GL/glut.h>
 #include <cmath>
 
+
 GLfloat light_position[] = { 2.0, 2.0, 1.0, 1.0 }; // Posisi cahaya
 GLfloat light_position2[] = { -2.0, 2.0, -1.0, 1.0 }; // Posisi cahaya
 GLfloat white_light[] = { 1.0, 1.0, 1.0, 1.0 }; // Warna cahaya putih
@@ -150,6 +151,11 @@ void display() {
         drawCustomCube(1.0, 1.185, -0.6, 1.9, 0.03, 0.05);
         drawCustomCube(-1.0, 1.185, -0.6, 1.9, 0.03, 0.05);
 
+    //putih sekat atas bawah
+        drawCustomCube(0.0, 1.185, 0.08, 0.05, 0.03, 1.3);
+        drawCustomCube(0.0, -0.785, 0.08, 0.05, 0.03, 1.3);
+        
+
     //papan belakang bawah
         glColor3f(0.81, 0.69, 0.38);
         drawCustomCube(-1.0, 0.63, -0.6, 1.9, 0.22, 0.05);
@@ -162,7 +168,7 @@ void display() {
            
     //papan sekat
         glColor3f(0.81, 0.69, 0.38);
-        drawCustomCube(0.0, 0.2, 0.08, 0.05, 2.0, 1.3);
+        drawCustomCube(0.0, 0.2, 0.08, 0.05, 1.95, 1.3);
 
     //outline sekat tengah
         glColor3f(1.3, 1.3, 1.3);
