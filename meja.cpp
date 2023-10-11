@@ -132,16 +132,34 @@ void display() {
     //papan atas
         drawCustomCube(0.0, 0.475, 0.1, 3.5, 0.05, 1.35);
     //papan belakang kiri kanan
-        drawCustomCube(0.9, 0.3, -0.6, 1.7, 1.5, 0.05);
-        drawCustomCube(-0.9, 0.3, -0.6, 1.7, 1.5, 0.05);
+        drawCustomCube(-1.0, 0.0, -0.6, 1.9, 1.0, 0.05); 
+        drawCustomCube(1.0, 0.0, -0.6, 1.9, 1.0, 0.05);
+
+        glColor3f(1.0, 1.0, 1.0);
+    //putih bawah
+        drawCustomCube(-1.0, -0.65, -0.6, 1.9, 0.3, 0.05);
+        drawCustomCube(1.0, -0.65, -0.6, 1.9, 0.3, 0.05);
+
+    //sekat putih belakang
+        drawCustomCube(1.0, 0.51, -0.6, 1.9, 0.03, 0.05);
+        drawCustomCube(-1.0, 0.51, -0.6, 1.9, 0.03, 0.05);
+
+        drawCustomCube(1.0, 0.75, -0.6, 1.9, 0.03, 0.05);
+        drawCustomCube(-1.0, 0.75, -0.6, 1.9, 0.03, 0.05);
+
+        drawCustomCube(1.0, 1.19, -0.6, 1.9, 0.03, 0.05);
+        drawCustomCube(-1.0, 1.19, -0.6, 1.9, 0.03, 0.05);
 
     //papan sekat
         glColor3f(0.52, 0.52, 0.38);
         drawCustomCube(0.0, 0.2, 0.08, 0.05, 2.0, 1.3);
 
-    //outline
+    //outline sekat tengah
         glColor3f(1.3, 1.3, 1.3);
         drawCustomCube(0.0, 0.2, 0.755, 0.05, 2.0, 0.05);
+        drawCustomCube(0.0, 0.2, -0.6, 0.1, 2.0, 0.06);
+
+
     glPopMatrix();
 
 
@@ -163,7 +181,7 @@ void display() {
     glPushMatrix();
     //miringan atas
         glRotatef(152.0, 1.0, 0.0, 0.0);
-        drawCustomCube(1.5, -0.18, 0.0, 0.05, 0.02, 1.1);
+        drawCustomCube(1.5, -0.20, 0.0, 0.05, 0.02, 1.1);
     glPopMatrix();
 
     glPushMatrix();
@@ -183,7 +201,11 @@ void display() {
     //outline
         glColor3f(0.5, 0.5, 0.5);
     //monitor bawah
-        drawCustomCube(0.9, 0.7, -0.3, 1.0, 0.15, 0.05);
+        
+    
+        drawCustomCube(0.9, 0.7, -0.3, 1.05, 0.145, 0.04);
+        drawCustomCube(0.365, 0.71, -0.3, 0.025, 0.12, 0.04);
+        drawCustomCube(1.435, 0.71, -0.3, 0.025, 0.12, 0.04);
     //sangga
         drawCustomCube(0.9, 0.5, -0.4, 0.3, 0.01, 0.35);
     //outline
@@ -197,6 +219,20 @@ void display() {
     //keyboard
         glColor3f(0.0, 0.0, 0.0);
         drawCustomCube(0.85, 0.5, 0.0, 1, 0.08, 0.3); 
+    glPopMatrix();
+
+    glPushMatrix();
+        glColor3f(0.5, 0.5, 0.5);
+    //lingkaran samping kiri
+        glTranslatef(0.39, 0.665, -0.3);
+        drawTorus(0.02, 0.02, 30, 20);
+    glPopMatrix();
+
+    glPushMatrix();
+        glColor3f(0.5, 0.5, 0.5);
+    //lingkaran samping    
+        glTranslatef(1.405, 0.665, -0.3);
+        drawTorus(0.02, 0.02, 30, 20);
     glPopMatrix();
 
 
